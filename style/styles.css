@@ -91,6 +91,10 @@ p {
 }
 
 /* animaciones */
+.jello-vertical {
+	-webkit-animation: jello-vertical 1.5s both;
+	        animation: jello-vertical 1.5s both;
+}
 .bounce-in-top {
 	-webkit-animation: bounce-in-top 1.5s ease-in both;
 	        animation: bounce-in-top 1.5s ease-in both;
@@ -110,6 +114,66 @@ p {
 
 
 /* keyframes */
+@-webkit-keyframes jello-vertical {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.85, 1.15, 1);
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-vertical {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.85, 1.15, 1);
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
 
  @-webkit-keyframes bounce-in-top {
     0% {
@@ -253,13 +317,13 @@ p {
     margin-bottom: 4rem;
     background-color: #9B44F2;
 }
-@media (min-width:768px) {
-    .header{
-        position: sticky;
-        top: 0px;
-        z-index: 100;
-    }
+
+.header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
 }
+
 .header__nav{
     display: flex;
     flex-direction: row;
@@ -326,6 +390,9 @@ p {
     width: 60%;
     min-width: 28rem;
     height: 4rem;
+    font-size: 1.6rem;
+    border: solid 1px #9B44F2;
+    border-radius: .8rem;
     margin-bottom: 3rem;
 }
 .footer{
@@ -344,6 +411,7 @@ p {
 .ul__li a{
     font-size: 1.8rem;
 }
+
 @media (min-width: 500px) {
     .grilla-index{
         margin: 0;
@@ -398,7 +466,7 @@ p {
     }
     
 }
-@media (min-width: 768px) {
+@media (min-width: 850px) {
     .grilla-index{
         margin: 0;
         display: grid;
@@ -614,7 +682,11 @@ p {
     margin-top: 1rem;
 }
 .btnForm{
+    margin-top: 2rem;
     width: 20rem;
+}
+.btnForm:hover {
+    transform: scale(1.1);
 }
 .articleElement .contenido__btn--violeta {
     width: 50%;
@@ -627,16 +699,36 @@ p {
 }
 .elementSize {
     font-size: 2rem;
+    border: solid 1px #9B44F2;
+    padding: 1rem;
+    border-radius: .8rem;
+    transition: 300ms;
+}
+.elementSize:hover,
+.elementSize:focus,
+.articleTextArea:hover,
+.articleTextArea:focus,
+.elementSize--S:hover,
+.elementSize--S:focus{
+    transform: scale(1.1);
+    border: solid 1px #9B44F2;
+    outline: none;
 }
 .elementSize--S{
     width: 20%;
     font-size: 2rem;
+    border: solid 1px #9B44F2;
+    border-radius: .8rem;
 }
 
 .articleTextArea{
     height: 10rem;
     font-size: 1.8rem;
+    border: solid 1px #9B44F2;
+    padding: 1rem;
+    border-radius: .8rem;
 }
+
 @media (min-width:768px) {
     .divForm{
         display: grid;
