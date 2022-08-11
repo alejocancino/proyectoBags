@@ -313,6 +313,8 @@ p {
 }
 /* HEADER */
 .header{
+    display: flex; 
+    justify-content: space-between;
     width: 100%;
     margin-bottom: 4rem;
     background-color: #9B44F2;
