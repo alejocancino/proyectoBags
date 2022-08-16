@@ -1,0 +1,42 @@
+/* ---------- PAGINA GAMES ---------- */
+.pageDivGames img {
+    min-width: 25rem;
+    width: 80%;
+}
+.pageDivGames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+@media (min-width:768px) { 
+    .pageDivGames{
+        display: grid;
+        padding: 2rem;
+        justify-items: center;
+        gap: 5rem;
+        grid-template-areas: 
+        "a b";  
+        .item1{
+            grid-area: a;
+        }
+        .item2{
+            grid-area: b;
+        }
+        .item3 {
+            grid-area: b;
+        }
+        .item4 {
+            grid-area: a;
+        }
+        .item5{
+            grid-area: a;
+        }
+        .item6{
+            grid-area: b;
+        }
+    }
+}
+.games__contenido p {
+    font-size: 2rem;
+}

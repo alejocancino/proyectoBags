@@ -1,0 +1,68 @@
+.aboutUsGrilla img {
+    width: 30rem;
+}
+.aboutUsContenido--primero{
+    border-top: solid 2px #7534b6;
+    
+        h2{
+        text-align: left;
+        padding: 2rem;
+    }
+}
+.aboutUsContenido--segundo h2{
+    text-align: right;
+    padding: 2rem;
+}
+.lineaSuperiorInferior{
+    padding-bottom: 3rem;
+    border-bottom: solid 2px #7534b6;
+}
+.aboutUsSection--ultimo{
+    margin-bottom: 4rem;
+}
+.aboutUsContenido--primero, .aboutUsContenido--segundo {
+    margin: 2rem;
+}
+@media (min-width:768px) {
+    .aboutUsGrilla {
+        display: grid;
+        margin: 2rem;
+        row-gap: 5rem;
+        grid-template-areas: 
+        "principal"
+        "contenidoDoble"
+        "contenidoUltimo";
+        margin-bottom: 8rem;
+        
+    }
+    .aboutUsContenido--primero{
+        border:none;
+    }
+    .aboutUsContenido--primero h2{
+        text-align: center;
+    }
+    .aboutUsContenido--segundo h2{
+        text-align: center;
+    }
+    .aboutUsSection {
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+        grid-area: principal;
+    }
+    .aboutUsSection--doble{
+        display: flex;
+    }
+    .aboutUsSection--doble{
+        grid-area: contenidoDoble;
+    }
+    
+    .aboutUsSection--ultimo{
+        grid-area: contenidoUltimo;
+    }
+    .lineaSuperiorInferior{
+        border-top: solid 2px #7534b6;
+        padding-bottom: 3rem;
+        border-bottom: solid 2px #7534b6;
+    }
+}

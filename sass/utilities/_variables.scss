@@ -1,0 +1,120 @@
+$tipografia: 'Roboto', sans-serif;
+$gris: #cecece38;
+$violeta:  #9B44F2;
+
+/* RESETEO */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: $tipografia;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+img{
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4 {
+    margin-top: 3rem;
+    margin-bottom:1rem;
+}
+h1 {
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3,h4{
+    font-size: 2.6rem;
+}
+p {
+    line-height: 4rem;
+    font-size: 1.8rem;
+}
+
+// UTILITIES 
+.fondo-gris{
+    background-color: $gris;
+    padding: 2rem;
+}
+.centrado{
+    text-align: center;
+}
+.no-margin{
+    margin: 0;
+}
+.reseteoBtn{
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.contenido__btn--violeta{
+    background-color: rgba(155,78,242,255) ;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    letter-spacing: .3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 500ms;
+    -webkit-box-shadow: 0px 11px 61px 12px rgba(176,150,255,1);
+    -moz-box-shadow: 0px 11px 61px 12px rgba(176,150,255,1);
+    box-shadow: 0px 11px 61px 12px rgba(176,150,255,1);
+}
+.contenido__btn--violeta:hover{
+    background-color: #7534b6;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 11px 61px 12px rgb(126, 228, 247);
+    -moz-box-shadow: 0px 11px 61px 12px rgb(126, 228, 247);
+    box-shadow: 0px 11px 61px 12px rgb(126, 228, 247);
+}
+.izquierda{
+    text-align: left;
+    padding-left:6rem ;
+}
+
+// IMAGES
+.logoBags{
+    width: 6rem;
+}
+.portada{
+    width: 100%;
+}
+.logoJuego{
+    width: 30%;
+    min-width:30rem;
+}
+.icon__svg{
+    width: 4rem;
+}
+.arrow__svg{
+    width: 3rem;
+}
+.about__image{
+    min-width: 30rem;
+    width: 80%;
+}
+.card__img{
+    min-width:15rem ;
+    width: 20%;
+}
+.liElement--s{
+    width: 5rem;
+}
+.games__logoJuego{
+    width: 40%;
+}
