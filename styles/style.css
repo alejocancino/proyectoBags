@@ -293,11 +293,147 @@ p {
     animation-timing-function: ease-out;
   }
 }
+/* RESETEO */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3, h4 {
+  font-size: 2.6rem;
+}
+
+p {
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
+
+.fondo-gris {
+  background-color: rgba(206, 206, 206, 0.2196078431);
+  padding: 2rem;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.reseteoBtn {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.contenido__btn--violeta {
+  background-color: rgb(155, 78, 242);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 500ms;
+  box-shadow: 0px 11px 61px 12px rgb(176, 150, 255);
+}
+
+.contenido__btn--violeta:hover {
+  background-color: #7534b6;
+  color: #ffffff;
+  box-shadow: 0px 11px 61px 12px rgb(126, 228, 247);
+}
+
+.izquierda {
+  text-align: left;
+  padding-left: 6rem;
+}
+
+.logoBags {
+  width: 6rem;
+}
+
+.portada {
+  width: 100%;
+}
+
+.logoJuego {
+  width: 30%;
+  min-width: 30rem;
+}
+
+.icon__svg {
+  width: 4rem;
+}
+
+.arrow__svg {
+  width: 3rem;
+}
+
+.about__image {
+  min-width: 30rem;
+  width: 80%;
+}
+
+.card__img {
+  min-width: 15rem;
+  width: 20%;
+}
+
+.liElement--s {
+  width: 5rem;
+}
+
+.games__logoJuego {
+  width: 40%;
+}
+
 /* HEADER */
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  align-items: flex-start;
   margin-bottom: 4rem;
   background-color: #9B44F2;
   position: -webkit-sticky;
@@ -313,6 +449,10 @@ p {
   padding: 1rem;
 }
 
+.nav__icons--redes {
+  display: none;
+}
+
 .nav__ul {
   display: flex;
   gap: 3rem;
@@ -325,35 +465,18 @@ p {
   font-size: 2rem;
 }
 
-.nav__icons--redes {
-  display: none;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  justify-content: center;
-}
-
-.icon__svg {
-  cursor: pointer;
-  transition: 500ms;
-}
-.icon__svg:hover {
+.IconNavBar {
   transform: scale(1.3);
-  transition: 500ms;
-  border-radius: 0.8rem;
-  background-color: rgb(126, 228, 247);
 }
 
 @media (min-width: 500px) {
   .header {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .header .logoBags {
-    margin-left: 5rem;
-  }
-  .nav__icons--redes {
-    display: flex;
+    margin-right: 2rem;
   }
   .nav__ul {
     flex-direction: row;
@@ -366,6 +489,25 @@ p {
     background-color: rgb(126, 228, 247);
     padding: 0.7rem;
     color: #000;
+  }
+}
+@media (min-width: 840px) {
+  .nav__icons--redes {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+  }
+  .icon__svg {
+    cursor: pointer;
+    transition: 500ms;
+  }
+  .icon__svg:hover {
+    transform: scale(1.3);
+    transition: 500ms;
+    border-radius: 0.8rem;
+    background-color: rgb(126, 228, 247);
   }
 }
 /* FOOTER */
@@ -383,6 +525,141 @@ p {
 }
 .footer ul li {
   font-size: 1.8rem;
+}
+
+/* RESETEO */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3, h4 {
+  font-size: 2.6rem;
+}
+
+p {
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
+
+.fondo-gris {
+  background-color: rgba(206, 206, 206, 0.2196078431);
+  padding: 2rem;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.reseteoBtn {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.contenido__btn--violeta {
+  background-color: rgb(155, 78, 242);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 500ms;
+  box-shadow: 0px 11px 61px 12px rgb(176, 150, 255);
+}
+
+.contenido__btn--violeta:hover {
+  background-color: #7534b6;
+  color: #ffffff;
+  box-shadow: 0px 11px 61px 12px rgb(126, 228, 247);
+}
+
+.izquierda {
+  text-align: left;
+  padding-left: 6rem;
+}
+
+.logoBags {
+  width: 6rem;
+}
+
+.portada {
+  width: 100%;
+}
+
+.logoJuego {
+  width: 30%;
+  min-width: 30rem;
+}
+
+.icon__svg {
+  width: 4rem;
+}
+
+.arrow__svg {
+  width: 3rem;
+}
+
+.about__image {
+  min-width: 30rem;
+  width: 80%;
+}
+
+.card__img {
+  min-width: 15rem;
+  width: 20%;
+}
+
+.liElement--s {
+  width: 5rem;
+}
+
+.games__logoJuego {
+  width: 40%;
 }
 
 .main__contenido {
@@ -447,6 +724,10 @@ p {
   .div__card p {
     padding: 1rem;
   }
+  .div__card h5 {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
   .div__subscribe {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -483,6 +764,141 @@ p {
   }
 }
 /* ---------- PAGINA GAMES ---------- */
+/* RESETEO */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3, h4 {
+  font-size: 2.6rem;
+}
+
+p {
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
+
+.fondo-gris {
+  background-color: rgba(206, 206, 206, 0.2196078431);
+  padding: 2rem;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.reseteoBtn {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.contenido__btn--violeta {
+  background-color: rgb(155, 78, 242);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 500ms;
+  box-shadow: 0px 11px 61px 12px rgb(176, 150, 255);
+}
+
+.contenido__btn--violeta:hover {
+  background-color: #7534b6;
+  color: #ffffff;
+  box-shadow: 0px 11px 61px 12px rgb(126, 228, 247);
+}
+
+.izquierda {
+  text-align: left;
+  padding-left: 6rem;
+}
+
+.logoBags {
+  width: 6rem;
+}
+
+.portada {
+  width: 100%;
+}
+
+.logoJuego {
+  width: 30%;
+  min-width: 30rem;
+}
+
+.icon__svg {
+  width: 4rem;
+}
+
+.arrow__svg {
+  width: 3rem;
+}
+
+.about__image {
+  min-width: 30rem;
+  width: 80%;
+}
+
+.card__img {
+  min-width: 15rem;
+  width: 20%;
+}
+
+.liElement--s {
+  width: 5rem;
+}
+
+.games__logoJuego {
+  width: 40%;
+}
+
 .pageDivGames img {
   min-width: 25rem;
   width: 80%;
@@ -524,6 +940,141 @@ p {
 }
 .games__contenido p {
   font-size: 2rem;
+}
+
+/* RESETEO */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3, h4 {
+  font-size: 2.6rem;
+}
+
+p {
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
+
+.fondo-gris {
+  background-color: rgba(206, 206, 206, 0.2196078431);
+  padding: 2rem;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.reseteoBtn {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.contenido__btn--violeta {
+  background-color: rgb(155, 78, 242);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 500ms;
+  box-shadow: 0px 11px 61px 12px rgb(176, 150, 255);
+}
+
+.contenido__btn--violeta:hover {
+  background-color: #7534b6;
+  color: #ffffff;
+  box-shadow: 0px 11px 61px 12px rgb(126, 228, 247);
+}
+
+.izquierda {
+  text-align: left;
+  padding-left: 6rem;
+}
+
+.logoBags {
+  width: 6rem;
+}
+
+.portada {
+  width: 100%;
+}
+
+.logoJuego {
+  width: 30%;
+  min-width: 30rem;
+}
+
+.icon__svg {
+  width: 4rem;
+}
+
+.arrow__svg {
+  width: 3rem;
+}
+
+.about__image {
+  min-width: 30rem;
+  width: 80%;
+}
+
+.card__img {
+  min-width: 15rem;
+  width: 20%;
+}
+
+.liElement--s {
+  width: 5rem;
+}
+
+.games__logoJuego {
+  width: 40%;
 }
 
 .aboutUsGrilla img {
@@ -594,6 +1145,141 @@ p {
     border-bottom: solid 2px #7534b6;
   }
 }
+/* RESETEO */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3, h4 {
+  font-size: 2.6rem;
+}
+
+p {
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
+
+.fondo-gris {
+  background-color: rgba(206, 206, 206, 0.2196078431);
+  padding: 2rem;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.reseteoBtn {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.contenido__btn--violeta {
+  background-color: rgb(155, 78, 242);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 500ms;
+  box-shadow: 0px 11px 61px 12px rgb(176, 150, 255);
+}
+
+.contenido__btn--violeta:hover {
+  background-color: #7534b6;
+  color: #ffffff;
+  box-shadow: 0px 11px 61px 12px rgb(126, 228, 247);
+}
+
+.izquierda {
+  text-align: left;
+  padding-left: 6rem;
+}
+
+.logoBags {
+  width: 6rem;
+}
+
+.portada {
+  width: 100%;
+}
+
+.logoJuego {
+  width: 30%;
+  min-width: 30rem;
+}
+
+.icon__svg {
+  width: 4rem;
+}
+
+.arrow__svg {
+  width: 3rem;
+}
+
+.about__image {
+  min-width: 30rem;
+  width: 80%;
+}
+
+.card__img {
+  min-width: 15rem;
+  width: 20%;
+}
+
+.liElement--s {
+  width: 5rem;
+}
+
+.games__logoJuego {
+  width: 40%;
+}
+
 .section__h3--team {
   margin-top: 5rem;
   margin-bottom: 1rem;
@@ -661,6 +1347,141 @@ p {
     transform: scale(1.4);
   }
 }
+/* RESETEO */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3, h4 {
+  font-size: 2.6rem;
+}
+
+p {
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
+
+.fondo-gris {
+  background-color: rgba(206, 206, 206, 0.2196078431);
+  padding: 2rem;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.reseteoBtn {
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.contenido__btn--violeta {
+  background-color: rgb(155, 78, 242);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.3rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: 500ms;
+  box-shadow: 0px 11px 61px 12px rgb(176, 150, 255);
+}
+
+.contenido__btn--violeta:hover {
+  background-color: #7534b6;
+  color: #ffffff;
+  box-shadow: 0px 11px 61px 12px rgb(126, 228, 247);
+}
+
+.izquierda {
+  text-align: left;
+  padding-left: 6rem;
+}
+
+.logoBags {
+  width: 6rem;
+}
+
+.portada {
+  width: 100%;
+}
+
+.logoJuego {
+  width: 30%;
+  min-width: 30rem;
+}
+
+.icon__svg {
+  width: 4rem;
+}
+
+.arrow__svg {
+  width: 3rem;
+}
+
+.about__image {
+  min-width: 30rem;
+  width: 80%;
+}
+
+.card__img {
+  min-width: 15rem;
+  width: 20%;
+}
+
+.liElement--s {
+  width: 5rem;
+}
+
+.games__logoJuego {
+  width: 40%;
+}
+
 .articleElement {
   display: flex;
   flex-direction: column;

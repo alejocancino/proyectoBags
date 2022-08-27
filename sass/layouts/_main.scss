@@ -1,3 +1,5 @@
+@import "../utilities/variables";
+
 .main__contenido{
     margin-top: 5rem;
 }
@@ -26,7 +28,7 @@
     min-width: 28rem;
     height: 4rem;
     font-size: 1.6rem;
-    border: solid 1px #9B44F2;
+    border: solid 1px $violeta;
     border-radius: .8rem;
     margin-bottom: 3rem;
 }
@@ -47,12 +49,16 @@
         border-radius: .8rem;
         &:hover {
             transform: scale(1.1);
-            background-color: #b66dff;
+            background-color: $violetaClaro;
             color: #ffffff;
             z-index: 70;
         }
         p {
             padding: 1rem;
+        }
+        h5 {
+            margin-top: 2rem;
+            font-size: 1.8rem;
         }
     }
 

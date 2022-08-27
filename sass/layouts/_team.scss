@@ -1,8 +1,10 @@
+@import "../utilities/variables";
+
 .section__h3--team{
     margin-top: 5rem;
     margin-bottom: 1rem;
     font-weight: 300;
-    color: #9B44F2;
+    color: $violeta;
     display: inline-block;
     background-color: #cecece38;
     padding: 1rem;

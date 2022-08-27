@@ -1,8 +1,10 @@
+@import "../utilities/variables";
+
 .aboutUsGrilla img {
     width: 30rem;
 }
 .aboutUsContenido--primero{
-    border-top: solid 2px #7534b6;
+    border-top: solid 2px $violetaOscuro;
     
         h2{
         text-align: left;
@@ -15,7 +17,7 @@
 }
 .lineaSuperiorInferior{
     padding-bottom: 3rem;
-    border-bottom: solid 2px #7534b6;
+    border-bottom: solid 2px $violetaOscuro;
 }
 .aboutUsSection--ultimo{
     margin-bottom: 4rem;
@@ -61,8 +63,8 @@
         grid-area: contenidoUltimo;
     }
     .lineaSuperiorInferior{
-        border-top: solid 2px #7534b6;
+        border-top: solid 2px $violetaOscuro;
         padding-bottom: 3rem;
-        border-bottom: solid 2px #7534b6;
+        border-bottom: solid 2px $violetaOscuro;
     }
 }
