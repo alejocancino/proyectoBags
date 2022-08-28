@@ -673,8 +673,8 @@ p {
 }
 
 .contenido__btn {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .icons__ul {
@@ -1482,6 +1482,17 @@ p {
   width: 40%;
 }
 
+.articleTextArea, .elementSize--S, .elementSize:hover,
+.elementSize:focus,
+.articleTextArea:hover,
+.articleTextArea:focus,
+.elementSize--S:hover,
+.elementSize--S:focus, .elementSize {
+  border: solid 1px #9B44F2;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
 .articleElement {
   display: flex;
   flex-direction: column;
@@ -1513,9 +1524,6 @@ p {
 
 .elementSize {
   font-size: 2rem;
-  border: solid 1px #9B44F2;
-  padding: 1rem;
-  border-radius: 0.8rem;
   transition: 300ms;
 }
 
@@ -1526,23 +1534,17 @@ p {
 .elementSize--S:hover,
 .elementSize--S:focus {
   transform: scale(1.1);
-  border: solid 1px #9B44F2;
   outline: none;
 }
 
 .elementSize--S {
   width: 20%;
   font-size: 2rem;
-  border: solid 1px #9B44F2;
-  border-radius: 0.8rem;
 }
 
 .articleTextArea {
   height: 10rem;
   font-size: 1.8rem;
-  border: solid 1px #9B44F2;
-  padding: 1rem;
-  border-radius: 0.8rem;
 }
 
 @media (min-width: 768px) {

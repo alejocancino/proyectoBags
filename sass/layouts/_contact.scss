@@ -1,5 +1,11 @@
 @import "../utilities/variables";
 
+%elementSizing {
+    border: solid 1px $violeta;
+    border-radius: .8rem;
+    padding: 1rem;
+}
+
 .articleElement{
     display: flex;
     flex-direction: column;
@@ -27,9 +33,7 @@
 }
 .elementSize {
     font-size: 2rem;
-    border: solid 1px $violeta;
-    padding: 1rem;
-    border-radius: .8rem;
+    @extend %elementSizing;
     transition: 300ms;
 }
 .elementSize:hover,
@@ -39,22 +43,19 @@
 .elementSize--S:hover,
 .elementSize--S:focus{
     transform: scale(1.1);
-    border: solid 1px $violeta;
+    @extend %elementSizing;
     outline: none;
 }
 .elementSize--S{
     width: 20%;
     font-size: 2rem;
-    border: solid 1px $violeta;
-    border-radius: .8rem;
+    @extend %elementSizing;
 }
 
 .articleTextArea{
     height: 10rem;
     font-size: 1.8rem;
-    border: solid 1px $violeta;
-    padding: 1rem;
-    border-radius: .8rem;
+    @extend %elementSizing;
 }
 
 @media (min-width:768px) {

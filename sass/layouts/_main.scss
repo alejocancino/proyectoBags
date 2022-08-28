@@ -9,8 +9,7 @@
     align-items: center;
 }
 .contenido__btn{
-    margin-top:5rem;
-    margin-bottom:5rem;
+    @include padding-top-bot(5rem);
 }
 .icons__ul{
     gap: 3rem;
@@ -68,9 +67,9 @@
         flex-direction:column;
         }
     .icons__ul{
-         display: grid;
+        display: grid;
         grid-template-columns: 1fr 1fr;
-    }
+        }
     }
     
 @media (min-width: 768px) {

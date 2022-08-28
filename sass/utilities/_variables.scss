@@ -48,6 +48,12 @@ p {
     font-size: 1.8rem;
 }
 
+//Mixin
+@mixin padding-top-bot($pad) {
+    padding-top:$pad;
+    padding-bottom: $pad;
+}
+
 // UTILITIES 
 .fondo-gris{
     background-color: $gris;
@@ -64,6 +70,7 @@ p {
     color: #ffffff;
     cursor: pointer;
 }
+
 .contenido__btn--violeta{
     background-color: rgba(155,78,242,255) ;
     padding: 1rem;
