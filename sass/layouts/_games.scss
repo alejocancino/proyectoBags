@@ -38,7 +38,14 @@
             grid-area: b;
         }
     }
+    .games__contenido p {
+        margin: 0;
+    }
 }
 .games__contenido p {
     font-size: 2rem;
+    margin-top: 2rem;
+}
+.games__logoJuego {
+    border-radius: .8rem;
 }

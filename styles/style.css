@@ -433,7 +433,7 @@ p {
   display: flex;
   justify-content: center;
   width: 100%;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 4rem;
   background-color: #9B44F2;
   position: -webkit-sticky;
@@ -937,9 +937,17 @@ p {
   .pageDivGames .item6 {
     grid-area: b;
   }
+  .games__contenido p {
+    margin: 0;
+  }
 }
 .games__contenido p {
   font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.games__logoJuego {
+  border-radius: 0.8rem;
 }
 
 /* RESETEO */
@@ -1557,4 +1565,7 @@ p {
   .DivArticleForm {
     width: 70%;
   }
+}
+.imgLora {
+  width: 70%;
 }/*# sourceMappingURL=style.css.map */
