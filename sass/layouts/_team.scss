@@ -58,8 +58,8 @@
     display: block;
     cursor: pointer;
     transition: 300ms;
-}
-.games__svg:hover {
-    transform: scale(1.4);
-}
+        &:hover {
+            transform: scale(1.4);
+        }
+    }
 }
