@@ -521,6 +521,7 @@ p {
 .footer ul {
   align-items: flex-start;
   display: flex;
+  gap: 1rem;
   font-size: 2rem;
   justify-content: space-evenly;
 }
@@ -542,7 +543,8 @@ p {
 
 .svg-footer {
   margin: 1rem;
-  width: 30px;
+  min-width: 2rem;
+  max-width: 30px;
 }
 
 /* RESETEO */
@@ -711,7 +713,7 @@ p {
 .subscribe__input {
   text-align: center;
   width: 60%;
-  min-width: 28rem;
+  min-width: 20rem;
   height: 4rem;
   font-size: 1.6rem;
   border: solid 1px #9B44F2;
