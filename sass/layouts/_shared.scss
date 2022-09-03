@@ -95,14 +95,32 @@
     color: #ffffff;
     background-color: $violetaOscuro;
     ul{
+        align-items: flex-start;
        display: flex;
        font-size: 2rem;
        justify-content: space-evenly;
         
        li{
         font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         }
     } 
+    .ul__li{
+        
+        a{
+            transition: 500ms;
+            border-radius: .8rem;
+            &:hover{
+                background-color:rgb(126, 228, 247);
+                padding: .7rem;
+                color: #000;
+            }
+        }
+    }
 }
-
-
+    .svg-footer{
+        margin: 1rem;
+        width: 30px;
+    }

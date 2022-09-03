@@ -13,7 +13,8 @@
 }
 .icons__ul{
     gap: 3rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 .div__subscribe {
     display:flex;
@@ -32,6 +33,7 @@
     margin-bottom: 3rem;
 }
 
+ 
 @media (min-width: 500px) {
     .grilla-index{
         margin: 0;
@@ -54,10 +56,12 @@
         }
         p {
             padding: 1rem;
+            font-weight: 500;
         }
         h5 {
             margin-top: 2rem;
-            font-size: 1.8rem;
+            font-size: 2rem;
+            font-weight: 600;
         }
     }
 
