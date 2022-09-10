@@ -1,5 +1,5 @@
 $tipografia: 'Roboto', sans-serif;
-$gris: #cecece38;
+$gris: #e2e2e265;
 $violeta:  #9B44F2;
 $violetaOscuro:  #7534b6;
 $violetaClaro: #b66dff;
@@ -120,6 +120,7 @@ p {
 .card__img{
     min-width:15rem ;
     width: 20%;
+    border-radius: 5rem;
 }
 .liElement--s{
     width: 5rem;
